@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+// agak ribet DB nya 
+
 func NewDB() *sql.DB {
 	db, err := sql.Open("mysql", "root:admin@tcp(localhost:3306)/belajar_golang_restful_api")
 	helper.PanicIfError(err)
